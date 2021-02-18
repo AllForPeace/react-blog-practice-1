@@ -50,3 +50,32 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.likes {
+  margin-left: 25px
+}
+
+.addLikeButton {
+  margin-left: 5px;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline ;
+
+}
+
+.addLikeButton:hover {
+  color: rgb(13, 104, 223);
+}
+
+.addLikeButton:focus{
+  text-decoration: none;
+  outline: none;
+}
+
+.addLikeButton.clicked {
+  text-decoration: none;
+  color: #bbb;
+}
