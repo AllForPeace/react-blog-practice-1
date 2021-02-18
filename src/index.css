@@ -112,3 +112,7 @@ a{
   border-radius: 8px;
   cursor: pointer;
 }
+
+.create .button-submitting {
+  background: #aaa;
+}
