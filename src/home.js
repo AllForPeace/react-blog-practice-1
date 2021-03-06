@@ -2,8 +2,9 @@ import BlogList from './BlogList'
 import useFetch from './useFetch'
 
 const Home = () => {
-    const { data, isPending, error } = useFetch('http://localhost:8000/blogs');
-    const blogs = data;
+    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
+    //use colon to instantiate local const in array/object destruction
+    
     return (
         <div className="home">
             {isPending && <div>Loading ... </div>}

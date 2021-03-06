@@ -1,18 +1,33 @@
-import Navbar from './navbar'
-import Home from './home'
+import Navbar from './Navbar'
+import Home from './Home'
+import Create from './Create'
+import ShowBlog from './ShowBlog'
+import NotFound from './NotFound'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
-  const title = 'Welcome to the new blog';
-  const likes = 50;
-  const link = "https://www.google.com";
-
   return (
-    <div className="App">
-      <Navbar />
-      <div className="content">
-        <Home />
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/"> 
+              <Home /> 
+            </Route>
+            <Route exact path="/create">
+              <Create />
+            </Route>
+            <Route exact path="/blogs/:id">
+              <ShowBlog />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
