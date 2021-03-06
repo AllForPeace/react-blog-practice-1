@@ -19,9 +19,9 @@ function ShowBlog(){
             { error && <div> { error }</div> }
             { blog && (
                 <article>
-                    <h2> {blog.title} </h2>
-                    <p>Written by: {blog.author}</p>
-                    <div>{blog.body}</div>
+                    <h2 className="title"> {blog.title} </h2>
+                    <div className="body">{blog.body}</div>
+                    <p className="author">Written by: <strong>{blog.author}</strong></p>
                     <button onClick={handleDelete}>Delete Blog</button>
                 </article>
             )}

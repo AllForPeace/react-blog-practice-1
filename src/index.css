@@ -37,7 +37,7 @@
 }
 .content {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 20px;
 }
 
@@ -73,7 +73,17 @@
   margin: 20px 0;
 }
 
+.blog-details .title {
+  font-size: 30px;
+}
+
+.blog-details .author {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
 .blog-details button {
+  
   background: #f1365d;
   color: #fff;
   border: 0;
@@ -121,4 +131,28 @@
 
 .create .button-submitting {
   background: #aaa;
+}
+
+.create .preview-content {
+  padding: 18px 22px;
+  text-align: left;
+  border: 1px solid lightgray;
+}
+
+.create .preview-content h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.create .preview-content .title {
+  font-size: 30px;
+}
+
+
+.create .preview-content .body {
+  margin: 20px 0;
+}
+
+.create .preview-content .author {
+  font-size: 12px;
 }

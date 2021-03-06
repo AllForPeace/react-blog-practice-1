@@ -6,10 +6,6 @@ import NotFound from './NotFound'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
-  const title = 'Welcome to the new blog';
-  const likes = 50;
-  const link = "https://www.google.com";
-
   return (
     <Router>
       <div className="App">

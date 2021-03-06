@@ -46,17 +46,21 @@ function Create(){
                 <label>Blog Author: </label>
                 <select 
                     value={author}
-                    onChange={e=>setAuthor(e.target.value)}
+                    onChange={(e) => setAuthor(e.target.value)}
                 >
-                    <option value="mario">Mario</option>
-                    <option value="yoshi">Yoshi</option>
+                    <option value="Mario">Mario</option>
+                    <option value="Yoshi">Yoshi</option>
                 </select>
                 { !isPending && <button>Add Blog</button> }
                 { isPending && <button disabled className="button-submitting">Submitting...</button> }
             </form>
-            <p>{title}</p>
-            <p>{body}</p>
-            <p>{author}</p>
+
+            <div className="preview-content">
+                <h1>Preview</h1>
+                <p className='title'>{title}</p>
+                <p className='body'>{body}</p>
+                <p className='author'>Written by: <strong>{author}</strong></p>
+            </div>
         </div>
     );
 }
